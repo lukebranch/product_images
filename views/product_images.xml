@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+      <xpath expr="//field[@name='image_medium']" position="after">
+        <field name="x_secondpicture" widget="image" class="oe_avatar oe_left"/>
+      </xpath>
+    </data>
+</openerp>
