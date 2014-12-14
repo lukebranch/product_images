@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
-        <template id="product_x_second_picture" inherit_id="product_template_form_view" name="Product Custom Second Picture">
-            <xpath expr="//field[@name='image_medium']" position="after">
-                <field name="x_secondpicture" widget="image" class="oe_avatar oe_left"/>
-            </xpath>
-        </template>
+        <record id="product_x_second_picture" model="ir.ui.view">
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                   <xpath expr="//field[@name='image_medium']" position="after">
+                        <field name="x_secondpicture" widget="image" class="oe_avatar oe_left"/>
+                   </xpath>
+            </field>
+        </record>
     </data>
 </openerp>
